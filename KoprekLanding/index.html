@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="theme-color" content="#b90032"/>
+  <meta name="description" content="Koprek menyajikan cita rasa Indonesia yang berani, kremes renyah, dan momen seru untuk dinikmati bersama." data-i18n-content="metaDescription"/>
+  <title data-i18n-content="pageTitle">Koprek Indonesia</title>
+  <link rel="icon" href="assets/mark.webp" type="image/webp"/>
+  <link rel="preload" href="assets/puffin.otf" as="font" type="font/otf"/>
+  <link rel="preload" href="assets/puffin-bold.otf" as="font" type="font/otf"/>
+  <link rel="stylesheet" href="koprek.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <div class="utility-bar">
+      <div class="language-picker">
+        <button class="language-toggle" type="button" aria-label="Pilih bahasa" data-i18n-aria="chooseLanguage" aria-haspopup="menu" aria-expanded="false" aria-controls="language-menu">
+          <span class="language-flag indonesia-flag" aria-hidden="true"></span>
+          <span class="language-code">IDN</span>
+          <span class="language-chevron" aria-hidden="true">⌄</span>
+        </button>
+        <div class="language-menu" id="language-menu" role="menu" hidden>
+          <button type="button" role="menuitemradio" aria-label="Bahasa Indonesia" data-i18n-aria="languageIndonesian" aria-checked="true" data-language="id">
+            <span class="language-flag indonesia-flag" aria-hidden="true"></span> IDN
+          </button>
+          <button type="button" role="menuitemradio" aria-label="Bahasa Inggris" data-i18n-aria="languageEnglish" aria-checked="false" data-language="en">
+            <span class="language-flag england-flag" aria-hidden="true"></span> ENG
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="main-nav">
+      <a class="brand" href="#home" aria-label="Beranda Koprek" data-i18n-aria="brandHome">
+        <img src="assets/logo.webp" alt="Koprek"/>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Buka menu navigasi" data-i18n-aria="openNavigation" aria-expanded="false" aria-controls="site-menu">
+        <span></span><span></span><span class="sr-only">Menu</span>
+      </button>
+    </div>
+    <nav class="menu-drawer" id="site-menu" aria-label="Navigasi utama" data-i18n-aria="mainNavigation" hidden>
+      <a href="#home"><span data-i18n="navHome">Beranda</span> <span aria-hidden="true">↗</span></a>
+      <a href="#menu"><span data-i18n="navMenu">Jelajahi menu</span> <span aria-hidden="true">↗</span></a>
+      <a href="#about"><span data-i18n="navStory">Cerita kami</span> <span aria-hidden="true">↗</span></a>
+      <a href="#contact"><span data-i18n="navContact">Hubungi kami</span> <span aria-hidden="true">↗</span></a>
+    </nav>
+    <button class="drawer-backdrop" type="button" aria-label="Tutup menu navigasi" data-i18n-aria="closeNavigation" tabindex="-1" hidden></button>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-label="Galeri hidangan Koprek" data-i18n-aria="heroGallery">
+      <div class="hero-slides">
+        <article class="hero-slide is-active" data-hero-slide="0" aria-hidden="false">
+          <img src="images/banner/1.jpg" alt="Kolase kebersamaan tim Koprek" data-i18n-alt="heroCommunityAlt" fetchpriority="high"/>
+        </article>
+        <article class="hero-slide" data-hero-slide="1" aria-hidden="true">
+          <img src="images/banner/2.jpg" alt="Paket makanan dan minuman Koprek" data-i18n-alt="heroPackageAlt"/>
+        </article>
+        <article class="hero-slide" data-hero-slide="2" aria-hidden="true">
+          <img src="images/banner/3.jpg" alt="Kolaborasi bersama Koprek" data-i18n-alt="heroCollaborationAlt"/>
+        </article>
+      </div>
+      <div class="hero-controls">
+        <div class="hero-pagination" role="group" aria-label="Pilih galeri foto" data-i18n-aria="chooseGallery">
+          <button class="hero-dot is-active" type="button" aria-label="Tampilkan foto menu andalan" data-i18n-aria="showSignaturePhoto" aria-current="true" data-hero-to="0"></button>
+          <button class="hero-dot" type="button" aria-label="Tampilkan foto menu Indomie" data-i18n-aria="showIndomiePhoto" aria-current="false" data-hero-to="1"></button>
+          <button class="hero-dot" type="button" aria-label="Tampilkan foto minuman" data-i18n-aria="showDrinkPhoto" aria-current="false" data-hero-to="2"></button>
+        </div>
+        <button class="hero-arrow" type="button" aria-label="Foto sebelumnya" data-i18n-aria="previousPhoto" data-hero-direction="-1">←</button>
+        <button class="hero-arrow" type="button" aria-label="Foto berikutnya" data-i18n-aria="nextPhoto" data-hero-direction="1">→</button>
+      </div>
+    </section>
+
+    <section class="quick-links" aria-label="Jelajahi Koprek" data-i18n-aria="exploreKoprek">
+      <a class="quick-card quick-menu" href="#menu">
+        <span class="quick-icon" aria-hidden="true">✳</span>
+        <span class="quick-copy"><small data-i18n="quickMenuCaption">Segar, nikmat untuk dinikmati bersama</small><strong data-i18n="quickMenuLink">Lihat menu kami</strong></span>
+        <span class="quick-arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="quick-card quick-location" href="#contact">
+        <span class="quick-icon" aria-hidden="true">⌖</span>
+        <span class="quick-copy"><small data-i18n="quickContactCaption">Pesan Banyak?</small><strong data-i18n="quickContactLink">Chat kami untuk custom menu!</strong></span>
+        <span class="quick-arrow" aria-hidden="true">↗</span>
+      </a>
+    </section>
+
+    <section class="menu-section" id="menu" aria-labelledby="menu-title">
+      <div class="section-heading">
+        <h2 id="menu-title"><span data-i18n-html="menuHeading">Lagi ingin <span>makan apa?</span></span></h2>
+      </div>
+      <div class="menu-tabs" role="tablist" aria-label="Pilih kategori menu" data-i18n-aria="chooseMenuCategory">
+        <button class="menu-tab is-active" id="menu-tab-0" type="button" role="tab" aria-selected="true" aria-controls="menu-deck-0" data-menu-index="0" data-i18n="tabSignature">Best Seller</button>
+        <button class="menu-tab" id="menu-tab-1" type="button" role="tab" aria-selected="false" aria-controls="menu-deck-1" data-menu-index="1" tabindex="-1" data-i18n="tabNoodles">Mie</button>
+        <button class="menu-tab" id="menu-tab-2" type="button" role="tab" aria-selected="false" aria-controls="menu-deck-2" data-menu-index="2" tabindex="-1" data-i18n="tabBeverages">Minuman</button>
+        <button class="menu-tab" id="menu-tab-3" type="button" role="tab" aria-selected="false" aria-controls="menu-deck-3" data-menu-index="3" tabindex="-1" data-i18n="tabSnacks">Camilan</button>
+      </div>
+      <div class="dish-carousel" role="region" aria-label="Hidangan dalam menu" data-i18n-aria="menuDishes">
+        <button class="dish-arrow dish-arrow-prev" type="button" aria-label="Tampilkan hidangan sebelumnya" data-i18n-aria="previousDish">←</button>
+        <div class="dish-stage" aria-live="polite">
+          <div class="dish-deck is-active" id="menu-deck-0" role="tabpanel" aria-labelledby="menu-tab-0" data-menu-deck="0">
+            <article class="dish-card"><img src="assets/Koprek_NasiKremesAyamGeprek.png" alt="Nasi Kremes Ayam Geprek" data-i18n-alt="signatureChickenAlt" loading="lazy"/><div class="dish-card-copy"><p data-i18n="signatureBadge">Favorit semua</p><h3>Nasi Kremes Ayam Geprek</h3><span data-i18n="signatureChickenCopy">Ayam crispy, bumbu rempah, kremes renyah, dan sambal bawang.</span></div></article>
+            <article class="dish-card"><img src="assets/Koprek_NasiKremesTelur.png" alt="Nasi Kremes Telur" data-i18n-alt="signatureEggAlt" loading="lazy"/><div class="dish-card-copy"><p data-i18n="signatureEggBadge">Teman makan andalan</p><h3>Nasi Kremes Telur</h3><span data-i18n="signatureEggCopy">Telur, nasi hangat, kremes renyah, dan sambal bawang.</span></div></article>
+            <article class="dish-card"><img src="assets/Koprek_NasiKremesTahuBaksoGeprek.png" alt="Nasi Kremes Tahu Bakso" data-i18n-alt="signatureTofuAlt" loading="lazy"/><div class="dish-card-copy"><p data-i18n="signatureTofuBadge">Rasa yang berbeda</p><h3>Nasi Kremes Tahu Bakso</h3><span data-i18n="signatureTofuCopy">Tahu bakso, bumbu rempah, kremes renyah, dan sambal bawang.</span></div></article>
+          </div>
+          <div class="dish-deck" id="menu-deck-1" role="tabpanel" aria-labelledby="menu-tab-1" data-menu-deck="1" hidden>
+            <article class="dish-card"><img src="assets/Koprek_IndomieKremesAyamGeprek.png" alt="Indomie Kremes Ayam Geprek" data-i18n-alt="indomieChickenAlt" loading="lazy"/><div class="dish-card-copy"><p data-i18n="indomieChickenBadge">Porsi puas, rasa mantap</p><h3>Indomie Kremes Ayam Geprek</h3><span data-i18n="indomieChickenCopy">Indomie, ayam crispy, kremes renyah, dan sambal bawang.</span></div></article>
+            <article class="dish-card"><img src="assets/Koprek_IndomieKremesTelur.png" alt="Indomie Kremes Telur" data-i18n-alt="indomieEggAlt" loading="lazy"/><div class="dish-card-copy"><p data-i18n="indomieEggBadge">Favorit pencinta mi</p><h3>Indomie Kremes Telur</h3><span data-i18n="indomieEggCopy">Indomie, kremes renyah, telur, dan sambal bawang.</span></div></article>
+          </div>
+          <div class="dish-deck" id="menu-deck-2" role="tabpanel" aria-labelledby="menu-tab-2" data-menu-deck="2" hidden>
+            <article class="dish-card"><img src="assets/americano.webp" alt="Americano" data-i18n-alt="americanoAlt" loading="lazy"/><div class="dish-card-copy"><p data-i18n="coffee">Kopi</p><h3>Americano</h3><span data-i18n="americanoCopy">Espresso Arabika yang segar dengan cita rasa kuat.</span></div></article>
+            <article class="dish-card"><img src="assets/iced-tea.webp" alt="Es Teh" data-i18n-alt="icedTeaAlt" loading="lazy"/><div class="dish-card-copy"><p data-i18n="nonCoffee">Tanpa kopi</p><h3 data-i18n="icedTeaName">Es Teh</h3><span data-i18n="icedTeaCopy">Es teh manis segar, pas untuk meredakan pedas.</span></div></article>
+            <article class="dish-card"><img src="assets/latte.webp" alt="Es Latte" data-i18n-alt="latteAlt" loading="lazy"/><div class="dish-card-copy"><p data-i18n="coffee">Kopi</p><h3 data-i18n="latteName">Es Latte</h3><span data-i18n="latteCopy">Espresso Arabika berpadu dengan susu segar yang lembut.</span></div></article>
+            <article class="dish-card"><img src="assets/iced-tea.webp" alt="Es Teh Lemon" data-i18n-alt="lemonTeaAlt" loading="lazy"/><div class="dish-card-copy"><p data-i18n="nonCoffee">Tanpa kopi</p><h3 data-i18n="lemonTeaName">Es Teh Lemon</h3><span data-i18n="lemonTeaCopy">Teh lemon segar untuk menemani hidangan pedas.</span></div></article>
+            <article class="dish-card"><img src="assets/latte.webp" alt="Baileys Latte" data-i18n-alt="baileysAlt" loading="lazy"/><div class="dish-card-copy"><p data-i18n="coffee">Kopi</p><h3>Baileys Latte</h3><span data-i18n="baileysCopy">Latte lembut dengan sirup Baileys.</span></div></article>
+            <article class="dish-card"><img src="assets/iced-tea.webp" alt="Es Teh Leci" data-i18n-alt="lycheeTeaAlt" loading="lazy"/><div class="dish-card-copy"><p data-i18n="nonCoffee">Tanpa kopi</p><h3 data-i18n="lycheeTeaName">Es Teh Leci</h3><span data-i18n="lycheeTeaCopy">Es teh dengan rasa leci yang segar.</span></div></article>
+            <article class="dish-card"><img src="assets/latte.webp" alt="Butterscotch Latte" data-i18n-alt="butterscotchAlt" loading="lazy"/><div class="dish-card-copy"><p data-i18n="coffee">Kopi</p><h3>Butterscotch Latte</h3><span data-i18n="butterscotchCopy">Perpaduan susu dan sirup butterscotch yang gurih.</span></div></article>
+            <article class="dish-card"><img src="assets/oreo.webp" alt="Oreo Shake" data-i18n-alt="oreoAlt" loading="lazy"/><div class="dish-card-copy"><p data-i18n="nonCoffee">Tanpa kopi</p><h3>Oreo Shake</h3><span data-i18n="oreoCopy">Susu Oreo lembut dengan taburan biskuit renyah.</span></div></article>
+            <article class="dish-card"><img src="assets/iced-tea.webp" alt="Air Mineral" data-i18n-alt="mineralWaterAlt" loading="lazy"/><div class="dish-card-copy"><p data-i18n="refreshment">Penyegar</p><h3 data-i18n="mineralWaterName">Air Mineral</h3><span data-i18n="mineralWaterCopy">Air mineral untuk menemani hidanganmu.</span></div></article>
+            <article class="dish-card"><img src="assets/latte.webp" alt="Es Cokelat" data-i18n-alt="chocolateAlt" loading="lazy"/><div class="dish-card-copy"><p data-i18n="nonCoffee">Tanpa kopi</p><h3 data-i18n="chocolateName">Es Cokelat</h3><span data-i18n="chocolateCopy">Cokelat premium yang lembut dan nikmat.</span></div></article>
+          </div>
+          <div class="dish-deck" id="menu-deck-3" role="tabpanel" aria-labelledby="menu-tab-3" data-menu-deck="3" hidden>
+            <article class="dish-card"><img src="assets/Koprek_TahuBaksoGoreng.png" alt="Tahu Bakso Goreng" data-i18n-alt="friedTofuAlt" loading="lazy"/><div class="dish-card-copy"><p data-i18n="crispySavory">Gurih dan renyah</p><h3>Tahu Bakso Goreng</h3><span data-i18n="friedTofuCopy">Tahu bakso goreng yang pas untuk camilan.</span></div></article>
+            <article class="dish-card"><img src="assets/Koprek_Kentang.png" alt="Kentang Goreng" data-i18n-alt="friesAlt" loading="lazy"/><div class="dish-card-copy"><p data-i18n="snackTime">Waktunya ngemil</p><h3 data-i18n="friesName">Kentang Goreng</h3><span data-i18n="friesCopy">Kentang goreng renyah untuk dinikmati bersama.</span></div></article>
+            <article class="dish-card"><img src="assets/Koprek_Siomay.png" alt="Siomay Goreng" data-i18n-alt="friedSiomayAlt" loading="lazy"/><div class="dish-card-copy"><p data-i18n="savorySnack">Camilan gurih</p><h3 data-i18n="friedSiomayName">Siomay Goreng</h3><span data-i18n="friedSiomayCopy">Siomay goreng renyah dengan rasa gurih.</span></div></article>
+          </div>
+        </div>
+        <button class="dish-arrow dish-arrow-next" type="button" aria-label="Pindahkan hidangan teratas ke belakang" data-i18n-aria="shuffleDish">→</button>
+      </div>
+      <a class="text-link" href="assets/menu-koprek.pdf" target="_blank" rel="noopener"><span data-i18n="fullMenu">Lihat menu lengkap</span> <span aria-hidden="true">↗</span></a>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-image"><img src="images/pesanan/5.png" alt="Paket pesanan besar Koprek" data-i18n-alt="aboutImageAlt" loading="lazy"/></div>
+      <div class="about-copy">
+        <p class="eyebrow" data-i18n="aboutEyebrow">Pesanan besar &amp; kolaborasi</p>
+        <h2><span data-i18n-html="aboutHeading">Pesan untuk acara/kolaborasi?<br/><span>Chat kami!</span></span></h2>
+        <a class="text-link" href="https://wa.me/628113068999?text=Halo%20Koprek%2C%20saya%20ingin%20bertanya%20tentang%20pesanan%20besar%20untuk%20acara%20atau%20kolaborasi." target="_blank" rel="noopener"><span data-i18n="aboutLink">Mulai chat</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="contact-banner" id="contact">
+      <div><p class="eyebrow" data-i18n="contactEyebrow"></p><h2 data-i18n="contactHeading">Sampai jumpa di meja makan!</h2></div>
+      <a class="pill-button pill-button-white" href="https://share.google/NnCDJ7CttYGiJvwfh" target="_blank" rel="noopener noreferrer"><span data-i18n="contactLink">Temui kami</span> <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-brand" href="#home"><img src="assets/logo.webp" alt="Koprek"/></a>
+    <div class="footer-contact">
+      <div class="footer-contact-links">
+        <a class="footer-contact-link" href="https://www.instagram.com/koprek.id/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @koprek.id" data-i18n-aria="instagramLink">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="icon-dot" cx="18" cy="6" r="1"/></svg>
+          <span>@koprek.id</span>
+        </a>
+        <a class="footer-contact-link" href="https://wa.me/6285117653538?text=Hi%20Koprek%2C%20saya%20dari%20website%20Koprek%20dan%20mau%20pesan%20makanan." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Admin" data-i18n-aria="whatsappLink">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 3.6A11.8 11.8 0 0 0 12 0C5.5 0 .2 5.3.2 11.8c0 2.1.5 4.1 1.6 5.9L0 24l6.5-1.7a11.8 11.8 0 0 0 5.5 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.1-1.2-6.1-3.5-8.3ZM12 21.7a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.9 1 1-3.8-.3-.4a9.8 9.8 0 1 1 8.6 4.8Zm5.4-7.3c-.3-.2-1.8-.9-2.1-1s-.5-.2-.7.2-.8 1-.9 1.2-.3.2-.6.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.2-.6l.5-.6c.1-.2.2-.3.3-.5s0-.4 0-.5-.7-1.7-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1 1-1 2.4 1 2.8 1.1 3c.1.2 2 3.1 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.1-1.4-.1-.2-.3-.3-.6-.4Z"/></svg>
+          <span data-i18n="whatsappAdmin">Admin</span>
+        </a>
+      </div>
+      <address class="footer-address" data-i18n="footerAddress">Jl. Nginden Semolo No.101 kav.23, Menur Pumpungan, Kec. Sukolilo, Surabaya, Jawa Timur 60118</address>
+      <small class="footer-copyright">© <span data-year></span> Koprek Indonesia</small>
+    </div>
+  </footer>
+  <script src="koprek.js"></script>
+</body>
+</html>
